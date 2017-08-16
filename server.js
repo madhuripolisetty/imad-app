@@ -4,8 +4,10 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articles=
+{
 
-var articleOne = {
+       articleOne:   {
                    title: 'article one | madhuri polisetty',
                    heading: 'aritcle-oneheading',
                    date: 'aug-15-2017',
@@ -39,6 +41,73 @@ var articleOne = {
                                 </div>
                                 </body>
                                 </html> `
+                 },
+       articleTwo:   { title: 'article two| madhuri polisetty',
+                   heading: 'aritcle-twoheading',
+                   date: 'aug-16-2017',
+                   content: ` <html>
+                                <head>
+                                <title>
+                                article-tw0
+                                </title>
+                                
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <link href="/ui/style.css" rel="stylesheet">
+                                
+                                </head>
+                                <body>
+                                <div class="container" >  
+                                <div>
+                                <p>thsis is article-two content</p>
+                                <hr/>
+                                <h3>aritcle -two</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-two content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-two content</p>
+                                <hr/>
+                                <h3>aritcle -two</h3>
+                                </div>
+                                </div>
+                                </body>
+                                </html> `  },
+       articleThree: { title: 'article three | madhuri polisetty',
+                   heading: 'aritcle-threeheading',
+                   date: 'aug-17-2017',
+                   content: ` <html>
+                                <head>
+                                <title>
+                                article-three
+                                </title>
+                                
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <link href="/ui/style.css" rel="stylesheet">
+                                
+                                </head>
+                                <body>
+                                <div class="container" >  
+                                <div>
+                                <p>thsis is article-three content</p>
+                                <hr/>
+                                <h3>aritcle -three</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-three content</p>
+                                <hr/>
+                                <h3>aritcle -three</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-three content</p>
+                                <hr/>
+                                <h3>aritcle three</h3>
+                                </div>
+                                </div>
+                                </body>
+                                </html> `  }
 };
 
 
