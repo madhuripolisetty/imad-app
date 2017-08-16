@@ -44,15 +44,15 @@ var articleOne = {
 
 function createTemplate(data)
 {
- var title = data.title
- var date = data.date
- var heading = data.heading
- var content = data.content
+ var title = data.title;
+ var date = data.date;
+ var heading = data.heading;
+ var content = data.content;
 
   var htmlTemplate = `<html>
                             <head>
                                 <title>
-                                    ${title};
+                                    ${title}
                                 </title>
                                 
                                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,14 +62,14 @@ function createTemplate(data)
                             <body>
                              <div class="container" >  
                               <div>
-                                  ${date};
+                                  ${date}
                               </div>
                               <div>
-                                  ${heading};
+                                  ${heading}
                               </div>
                              
                               <div>
-                                  ${content};
+                                  ${content}
                               </div>
                                
                              </div>
