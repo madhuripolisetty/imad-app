@@ -4,7 +4,41 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var articleOne = {
+                   title: 'article one | madhuri polisetty',
+                   heading: 'aritcle-one',
+                   date: 'aug-15-2017',
+                   content: ` <html>
+                                <head>
+                                <title>
+                                article-one
+                                </title>
+                                
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <link href="/ui/style.css" rel="stylesheet">
+                                
+                                </head>
+                                <body>
+                                <div class="container" >  
+                                <div>
+                                <p>thsis is article-one content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-one content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-one content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
+                                </div>
+                                </body>
+                                </html> `
+};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
