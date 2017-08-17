@@ -27,24 +27,13 @@ var articles =
                                 <p>thsis is article-one content</p>
                                 <hr/>
                                 <h3>aritcle -one</h3>
-                                </div>
+                                </div> `
                                 
                  },
        'article-Two':   { title: 'article two| madhuri polisetty',
                    heading: 'aritcle-twoheading',
                    date: 'aug-16-2017',
-                   content: ` <html>
-                                <head>
-                                <title>
-                                article-tw0
-                                </title>
-                                
-                                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                                <link href="/ui/style.css" rel="stylesheet" />
-                                
-                                </head>
-                                <body>
-                                <div class="container" >  
+                   content: ` 
                                 <div>
                                 <p>thsis is article-two content</p>
                                 <hr/>
@@ -60,24 +49,11 @@ var articles =
                                 <hr/>
                                 <h3>aritcle -two</h3>
                                 </div>
-                                </div>
-                                </body>
-                                </html> `  },
+                                 `  },
        'article-Three': { title: 'article three | madhuri polisetty',
                    heading: 'aritcle-threeheading',
                    date: 'aug-17-2017',
-                   content: ` <html>
-                                <head>
-                                <title>
-                                article-three
-                                </title>
-                                
-                                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                                <link href="/ui/style.css" rel="stylesheet" />
-                                
-                                </head>
-                                <body>
-                                <div class="container" >  
+                   content: ` 
                                 <div>
                                 <p>thsis is article-three content</p>
                                 <hr/>
@@ -93,9 +69,7 @@ var articles =
                                 <hr/>
                                 <h3>aritcle three</h3>
                                 </div>
-                                </div>
-                                </body>
-                                </html> `  }
+                               `  }
 };
 
 
@@ -117,7 +91,7 @@ function createTemplate (data)
                             </head>
                             
                             <body>
-                             <div class="container" >  
+                             <div class="container">  
                               <div>
                                   ${date}
                               </div>
