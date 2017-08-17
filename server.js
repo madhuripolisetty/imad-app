@@ -30,7 +30,7 @@ var articles =
                                 </div> `
                                 
                  },
-       'article-Two':   { title: 'article two| madhuri polisetty',
+       'article-Two':   { title: 'article two | madhuri polisetty',
                    heading: 'aritcle-twoheading',
                    date: 'aug-16-2017',
                    content: ` 
@@ -50,10 +50,10 @@ var articles =
                                 <h3>aritcle -two</h3>
                                 </div>
                                  `  },
-       'article-Three': { title: 'article three | madhuri polisetty',
-                   heading: 'aritcle-threeheading',
-                   date: 'aug-17-2017',
-                   content: ` 
+       'article-Three': {  title: 'article three | madhuri polisetty',
+                           heading: 'aritcle-threeheading',
+                           date: 'aug-17-2017',
+                           content: ` 
                                 <div>
                                 <p>thsis is article-three content</p>
                                 <hr/>
