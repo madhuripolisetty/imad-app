@@ -13,36 +13,22 @@ var articles =
                    title: 'article one | madhuri polisetty',
                    heading: 'aritcle-oneheading',
                    date: 'aug-15-2017',
-                   content: ` <html>
-                                <head>
-                                <title>
-                                article-one
-                                </title>
+                   content: `   <div>
+                                <p>thsis is article-one content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-one content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
+                                <div>
+                                <p>thsis is article-one content</p>
+                                <hr/>
+                                <h3>aritcle -one</h3>
+                                </div>
                                 
-                                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                                <link href="/ui/style.css" rel="stylesheet" />
-                                
-                                </head>
-                                <body>
-                                <div class="container" >  
-                                <div>
-                                <p>thsis is article-one content</p>
-                                <hr/>
-                                <h3>aritcle -one</h3>
-                                </div>
-                                <div>
-                                <p>thsis is article-one content</p>
-                                <hr/>
-                                <h3>aritcle -one</h3>
-                                </div>
-                                <div>
-                                <p>thsis is article-one content</p>
-                                <hr/>
-                                <h3>aritcle -one</h3>
-                                </div>
-                                </div>
-                                </body>
-                                </html> `
                  },
        'article-Two':   { title: 'article two| madhuri polisetty',
                    heading: 'aritcle-twoheading',
@@ -113,14 +99,14 @@ var articles =
 };
 
 
-function createTemplate(data)
+function createTemplate (data)
 {
  var title = data.title;
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
 
-  var htmlTemplate = `<html>
+  var htmlTemplate = ` <html>
                             <head>
                                 <title>
                                     ${title}
@@ -135,6 +121,9 @@ function createTemplate(data)
                               <div>
                                   ${date}
                               </div>
+                              <div>
+                               <a href="/">home</a>
+                               </div>
                               <div>
                                   ${heading}
                               </div>
