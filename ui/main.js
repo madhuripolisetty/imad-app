@@ -4,16 +4,16 @@ element.innerHTML = 'new content from main.js';
 
 //move the image as animation
 
-var marginLeft = 0;
-var img =  document.getElementById('madi');
+var marginLeft1 = 0;
+var img1 =  document.getElementById('madi');
 
 function moveRight ()
 {
-    marginLeft = marginLeft + 5;
-    img.style.marginLeft = marginLeft + 'px';
+    marginLeft1 = marginLeft1 + 5;
+    img1.style.marginLeft = marginLeft1 + 'px';
 }
 
-img.onclick =  function ()
+img1.onclick =  function ()
                 {
                     var interval = setInterval(moveRight, 50);
                 };
