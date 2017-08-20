@@ -20,10 +20,10 @@ img1.onclick =  function ()
                 
                 
 var counter = 0;
-var button1 =  document.getElementById('counter');
-button1.onclick = function()
+var button =  document.getElementById('counter');
+button.onclick = function()
                   { 
                     counter = counter + 1;
-                    var span1 = document.getElementById('span');
-                    span1.innerHTML = counter.toString();
+                    var span = document.getElementById('span');
+                    span.innerHTML = counter.toString();
                   };
