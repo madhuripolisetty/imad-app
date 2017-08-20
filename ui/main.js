@@ -20,4 +20,4 @@ img1.onclick =  function ()
                 
                 
 var counter = 0;
-var button = document.getElementById('couunter');
+var button = document.getElementById('counter');
