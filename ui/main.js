@@ -20,6 +20,7 @@ img1.onclick =  function ()
                 
                 
 
+/* this code will increment counter only when button is clicked but not in  counter endpoint
 var button =  document.getElementById('counter');
 var counter = 0;
 button.onclick = function ()
@@ -28,3 +29,33 @@ button.onclick = function ()
                     var span = document.getElementById('count');
                     span.innerHTML = counter.toString();
                   };
+*/
+
+var button =  document.getElementById('counter');
+
+button.onclick = function () 
+{
+//var counter = 0;
+
+var request = new XMLHttpRequest();
+request.onreadystatechange = function ()
+                             {
+                                 if ( request.readystate === XMLHttpRequest.DONE)
+                                 {
+                                     if ( request.status === 200 )
+                                     {
+                                         var counter = request.responseText;
+                                         var span = document.getElementByID('count');
+                                         span.innerHTML = counter.toString();
+                                     }
+                                 }
+                             };
+                             
+request.open('GET', 'http://mailtomadhurip.imad.hasura-app.io/counter', true );
+
+request.send(null);
+
+};
+
+
+
