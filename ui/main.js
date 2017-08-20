@@ -23,7 +23,7 @@ var counter = 0;
 var button1 =  document.getElementById('counter');
 button1.onclick = function()
                   { 
-                    counter = counter +1;
+                    counter = counter + 1;
                     var span1 = document.getElementById('span');
                     span1.innerHTML = counter.toString();
                   };
