@@ -61,7 +61,7 @@ request.send(null);
 
 /*var nameInput = document.getElementById('name');
 var name = nameInput.value;*/
-var submit =  document.getElementById('submit_btn');
+var submit =  document.getElementById('submit');
 submit.onclick = function ()
                  {
                     if (request.readyState === XMLHttpRequest.DONE)
