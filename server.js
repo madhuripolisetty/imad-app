@@ -179,7 +179,7 @@ app.get('/counter', function (req, res)
 
 app.get('/articles/:articleName', function (req, res)
 { 
-  pool.query("SELECT * FROM article WHERE title = '" + request.params.articleName + "'" , function (err, result)
+  Pool.query("SELECT * FROM article WHERE title = '" + request.params.articleName + "'" , function (err, result)
                                                                                           {
                                                                                              if(err)
                                                                                              {
