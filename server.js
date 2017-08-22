@@ -104,7 +104,7 @@ function createTemplate (data)
                             <body>
                              <div class="container">  
                               <div>
-                                  ${date}
+                                  ${date.toDateString()}
                               </div>
                               <div>
                                <a href="/">home</a>
