@@ -61,39 +61,39 @@ request.send(null);
 
 /*var nameInput = document.getElementById('name');
 var name = nameInput.value;*/
-var submit1 =  document.getElementById('submit_btn');
-submit1.onclick = function ()
+
+var sub =  document.getElementById('submit_btn');
+sub.onclick = function ()
                  {
                      var request = new XMLHttpRequest();
                      request.onreadystatechange = function ()
-                             {
-                                
-                    if (request.readyState === XMLHttpRequest.DONE)
-                     {
-                     if (request.status === 200)
-                     {
+                                                  {
+                                                   if (request.readyState === XMLHttpRequest.DONE)
+                                                     {
+                                                       if (request.status === 200)
+                                                         {
                    //var names = ['name1', 'name2', 'name3', 'name4' ];
-                        var names = request.responseText;
-                        names = JSON.parse(names);
+                                                            var names = request.responseText;
+                                                            names = JSON.parse(names);
                    //end of changes
                    
-                        var list = '';
-                        for (var i=0; i<names.length; i++)
-                         {
-                            list += '<li>' + names[i] + '</li>';
-                         }
-                        var ul =  document.getElementById('namelist');
-                        ul.innerHTML = list;
-                     }
-                     }
-                     };
+                                                             var list = '';
+                                                             for (var i=0; i<names.length; i++)
+                                                                {
+                                                                  list += '<li>' + names[i] + '</li>';
+                                                                 }
+                                                              var ul =  document.getElementById('namelist');
+                                                              ul.innerHTML = list;
+                                                          }
+                                                       }
+                                                     };
     //begin of changes                             
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+                        var nameInput = document.getElementById('name');
+                        var name = nameInput.value;
 //end of changes
 
-request.open('GET', 'http://mailtomadhurip.imad.hasura-app.io/submit-name?name=' + name, true);
-request.send(null);
+                        request.open('GET', 'http://mailtomadhurip.imad.hasura-app.io/submit-name?name=' + name, true);
+                        request.send(null);
 
-};
+                  };
 console.log('executing');
